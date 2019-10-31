@@ -1,4 +1,11 @@
-<h1>Cocktails</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2186&q=80);">
+  <div class="container">
+    <h1>Cocktails brings <strong>pleasure</strong> to <strong>dark people</strong>!</h1>
+    <p>Change your life and learn to make cocktails.</p>
+    <a class="btn btn-flat" href="#">Create cocktail</a>
+    <p class="btn btn-flat"><%= link_to "Create Cocktail", new_cocktail_path %></p>
+  </div>
+</div>
 <p><% @cocktails.each do |cocktail| %>
 <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
 <p><% end %></p>

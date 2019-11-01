@@ -1,12 +1,24 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2186&q=80);">
+<div class="banner">
   <div class="container">
     <h1>Cocktails brings <strong>pleasure</strong> to <strong>dark people</strong>!</h1>
-    <p>Change your life and learn to make cocktails.</p>
-    <a class="btn btn-flat" href="#">Create cocktail</a>
-    <p class="btn btn-flat"><%= link_to "Create Cocktail", new_cocktail_path %></p>
+    <p>Drink them, now.</p>
+    <a class="btn btn-flat" href="new_cocktail_path" >Create cocktail</a>
+
   </div>
 </div>
+
+
 <p><% @cocktails.each do |cocktail| %>
-<p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+  <div class="card-product">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <div class="card-product-infos">
+      <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+<!-- <p>Ingredients: <%= cocktail.ingredients.name %></p> -->
 <p><% end %></p>
 <p class="btn"><%= link_to "Create Cocktail", new_cocktail_path %></p>
+
+<!-- <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2186&q=80);"> -->
+
+
+  </div>
+</div>
